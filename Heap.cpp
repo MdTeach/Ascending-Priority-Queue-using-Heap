@@ -70,7 +70,7 @@ void Heap::traverseUp(Node* currentNode, int currentIndex){
             
             Node* parentNode = datas[newIndex];
             
-            //std::cout<<"Before"<<datas[newIndex]->data<<" "<<datas[currentIndex]->data<<"\n";
+            std::cout<<"Before"<<datas[newIndex]->data<<" "<<datas[currentIndex]->data<<"\n";
             
             datas[newIndex] = currentNode;
             datas[currentIndex] = datas[newIndex]; 
