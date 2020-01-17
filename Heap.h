@@ -61,5 +61,8 @@ class Heap{
     //traverse up
     void traverseUp(Node* currentNode, int currentIndex);
 
+    //traverse down
+    void traverseDown(Node* currentNode, int currentIndex);
+
 };
 
