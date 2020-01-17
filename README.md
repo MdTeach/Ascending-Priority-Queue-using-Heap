@@ -1,10 +1,10 @@
 # Ascending-Priority-Queue-using-Heap
 <p>To run the demo: In shell type</p>
-***
+```
 g++ ./Heap.cpp main.cpp
-***
+```
 <h3>Public methods:</h3>
-***c++
+```c++
 /*
 * Creates new node and adds to the heap
 * @parm string data -> data stored in the node
@@ -32,4 +32,4 @@ bool isFull();
 * BFS through the elements in the array
 */
 void traverse();
-***
+```
