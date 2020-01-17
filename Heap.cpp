@@ -63,7 +63,6 @@ void Heap::traverse(){
 
 //private functions
 void Heap::addToIndex(int index,Node* node){
-    std::cout<<"Added to index: "<<index<<"\n";
     datas[index] = node;
 }
 
@@ -75,7 +74,6 @@ int Heap::getParentIndex(int currentIndex){
 void Heap::traverseUp(Node* currentNode, int currentIndex){
     int newIndex = getParentIndex(currentIndex);
     if(newIndex >= 1){
-        std::cout<<"*** "<<newIndex<<" "<<currentIndex<<" "<<tail<<"\n";
         //parent node exists
         if(datas[newIndex]->priority > currentNode->priority){
             //low priority moveup
@@ -102,7 +100,7 @@ void Heap::traverseDown(Node* currentNode, int currentIndex){
         //node has both left and right subtree
         
         //compare the priority of the left and right child node and select with greatest priority
-        int subTreeWithHighPriority = (datas[leftIndex]->priority >= datas[rightIndex]->priority) ? leftIndex : rightIndex;
+        int subTreeWithHighPriority = (datas[leftIndex]->priority <= datas[rightIndex]->priority) ? leftIndex : rightIndex;
         if(datas[subTreeWithHighPriority]->priority < currentNode->priority){
             //swap
             datas[currentIndex] = datas[subTreeWithHighPriority];

@@ -9,7 +9,14 @@ int main(){
     h1.addToHeap(5,5);
 
     h1.addToHeap(1,1);
-    std::cout<<"\n:D\n";
     h1.traverse();
+
+    int head = h1.removeFromHeap();
+    h1.traverse();
+
+    int head = h1.removeFromHeap();
+    h1.traverse();
+
+
     std::cout<<"DOne :D";
 }
