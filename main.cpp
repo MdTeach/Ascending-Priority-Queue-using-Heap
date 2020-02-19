@@ -14,7 +14,7 @@ int main(){
     int head = h1.removeFromHeap();
     h1.traverse();
 
-    int head = h1.removeFromHeap();
+    head = h1.removeFromHeap();
     h1.traverse();
 
 
